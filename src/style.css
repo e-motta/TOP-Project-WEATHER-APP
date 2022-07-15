@@ -1,0 +1,186 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+body {
+  background-color: rgb(42, 43, 53);
+}
+.content {
+  width: 800px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: rgb(0, 0, 0) 0px 3px 10px;
+  /* background-color: rgb(235, 235, 235); */
+  background-color: rgb(235, 235, 235);
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  color: rgb(43, 43, 43);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.current-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.current-top .temperature {
+  font-size: 4em;
+}
+
+.current-top .units {
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-family: sans-serif;
+}
+
+.unselected {
+  color: rgba(43, 43, 43, 0.472);
+  font-size: .9em;
+}
+
+.current-weather {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.current-description {
+  align-self: center;
+}
+
+.current-description::first-letter {
+  text-transform: capitalize;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 18px;
+}
+
+.city-container {
+  min-height: 78px;
+}
+
+.location .city {
+  font-size: 4em;
+  text-align: end;
+}
+
+form {
+  width: 470px;
+  position: relative;
+}
+
+input {
+  border: 2px solid grey;
+  border-radius: 5px;
+  background-color: inherit;
+  font-family: inherit;  font-family: inherit;
+  width: 100%;
+  font-size: 4em;
+  text-align: right;
+}
+
+.invisible {
+  display: none;
+}
+
+.transparent {
+  visibility: hidden;
+}
+
+.change-location {
+  background-color: rgb(79, 79, 79);
+  color: rgb(235, 235, 235);
+  padding: 3px 6px;
+  border-radius: 15px;
+  font-size: .8em;
+  margin-top: 3px;
+}
+
+.iconify {
+  color: white
+}
+
+.btn {
+  color: black;
+  border-width: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.confirm {
+  background-color: rgb(75, 184, 75);
+  border-radius: 20px;
+  height: 24px;
+  width: 32px;
+  top: 15px;
+  right: -39px;
+}
+
+.cancel {
+  background-color: rgb(114, 114, 114);
+  border-radius: 20px;
+  height: 20px;
+  right: -36px;
+  top: 42px;
+}
+
+.location .time {
+  margin-top: 20px;
+  font-size: 1.4em;
+}
+
+.bottom {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.081);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.forecast-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forecast-day img {
+  width: 70%;
+}
+
+.forecast-day .temperature {
+  display: flex;
+  gap: 5px;
+}
+
+.forecast-day .temperature .min {
+  color: rgb(78, 77, 99);
+}
